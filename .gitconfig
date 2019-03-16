@@ -1,0 +1,21 @@
+[user]
+	name = Michael Siem
+	email = siem@wisc.edu
+[core]
+	editor = vim
+	autocrlf = input
+[push]
+	default = simple
+[color]
+	ui = true
+	status = true
+	branch = true
+	interactive = true
+[pull]
+	rebase = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	last = log -1 HEAD
