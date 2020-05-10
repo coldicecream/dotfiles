@@ -1,6 +1,6 @@
 [user]
-	name = Michael Siem
-	email = siem@wisc.edu
+	name = Michael
+	email = michael@xostrucks.com
 [core]
 	editor = vim
 	autocrlf = input
@@ -19,3 +19,4 @@
 	ci = commit
 	st = status
 	last = log -1 HEAD
+
