@@ -1,15 +1,12 @@
-##############################################################################
-# Aliases for all
-##############################################################################
+# Common
 alias ..="cd .."
 alias fhere="find . -name "
 
-##############################################################################
-# Directories on Bash Windows
-##############################################################################
-alias bms="cd /mnt/d/CCS/218e_BMS" 
+# Work Laptop
+if [ "$HOSTNAME" = "DESKTOP-IIH6T2V" ]; then
 
-##############################################################################
-# Directories on Computer Science
-##############################################################################
-alias p4="cd ~/private/537/p4b/xv6"
+alias bmshw="cd /mnt/c/Users/michael/bitbucket/battery_pcb_design"
+alias bmssw="cd /mnt/c/Users/michael/bitbucket/battery_sw_design"
+
+fi
+
