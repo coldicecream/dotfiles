@@ -85,7 +85,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -AlFh'
@@ -117,8 +117,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export MGC_HOME=/s/mentor-2018/@sys/V10.0BSXE/MGC_HOME.ixl
-export SDD_HOME=/s/mentor-2018/@sys/V10.0BSXE/SDD_HOME
-export PATH=$PATH:/s/mentor-2018/@sys/bin:/s/mentor-2018/@sys/bin.pclinux:/s/mentor-2018/@sys/V10.0BSXE/MGC_HOME.ixl/bin:/s/mentor-2018/@sys/modelsim_dlx/bin
-export MGLS_LICENSE_FILE=/s/mentor-2018/etc/cust/mgls/mgc.licenses
-PATH=$PATH:/u/s/i/sinclair/public/html/courses/cs552/spring2019/handouts/bins
+# Begin personal customization
+
+# Change to vim style keyboard shortcuts
+set -o vi
+
