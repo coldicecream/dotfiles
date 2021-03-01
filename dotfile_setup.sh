@@ -13,4 +13,6 @@ ln -s ~/dotfiles/.vimrc ~
 rm ~/.tmux.conf -f
 ln -s ~/dotfiles/.tmux.conf ~
 
+rm ~/.zshrc -f
+ln -s ~/dotfiles/.zshrc ~
 
