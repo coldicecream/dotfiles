@@ -131,3 +131,5 @@ prompt_end() {
     CURRENT_BG=''
 }
 
+[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+
