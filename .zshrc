@@ -8,7 +8,14 @@ export ZSH="/home/michael/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+
+# .zshrc
+fpath+=($HOME/.zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
+
+
+#ZSH_THEME="agnoster"
 #POWERLEVEL9K_MODE='nerdfont-complete'
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs vi_mode)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
@@ -129,6 +136,14 @@ prompt_end() {
     fi
     echo -n "%{%f%}"
     CURRENT_BG=''
+}
+
+# unzip a zip file into a directory with the same name
+# as the zipped file
+uzd () {
+    zipfile="$1"
+    zipdir=${1%.zip}
+    unzip -d "$zipdir" "$zipfile"
 }
 
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
