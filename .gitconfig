@@ -2,8 +2,8 @@
 	name = Michael
 	email = michael@xostrucks.com
 [core]
-	editor = vim
 	autocrlf = input
+    editor = code --wait
 [push]
 	default = simple
 [color]
@@ -19,4 +19,11 @@
 	ci = commit
 	st = status
 	last = log -1 HEAD
-
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
