@@ -38,9 +38,13 @@ log "Starting bootstrap"
 log "Installing uv"
 "$SCRIPTS_DIR/bootstrap_uv.sh"
 
-# ---- uv installation ----
+# ---- codex installation ----
 log "Installing codex"
 "$SCRIPTS_DIR/bootstrap_codex.sh"
+
+# ---- zsh installation ----
+log "Installing zsh"
+"$SCRIPTS_DIR/bootstrap_zsh.sh"
 
 # --------------------------------------------------
 # Completion
