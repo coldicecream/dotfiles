@@ -1,6 +1,3 @@
-[user]
-	name = Michael
-	email = michael@xostrucks.com
 [core]
 	autocrlf = input
     editor = code --wait
@@ -27,3 +24,5 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = code --wait --diff $LOCAL $REMOTE
+[include]
+    path = ~/.config/git/gitconfig.local

@@ -122,3 +122,5 @@ fi
 # Change to vim style keyboard shortcuts
 set -o vi
 
+
+. "$HOME/.local/bin/env"

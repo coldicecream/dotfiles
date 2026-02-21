@@ -111,3 +111,5 @@ uzd () {
 }
 
 [ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+
+. "$HOME/.local/bin/env"
