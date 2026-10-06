@@ -26,3 +26,5 @@
 	cmd = code --wait --diff $LOCAL $REMOTE
 [include]
     path = ~/.config/git/gitconfig.local
+[init]
+	defaultBranch = main
